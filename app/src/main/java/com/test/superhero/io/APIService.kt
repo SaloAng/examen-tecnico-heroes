@@ -7,5 +7,5 @@ import retrofit2.http.Url
 
 interface APIService {
     @GET
-    fun getHerosById(@Url url:String): Response<HeroResponse>
+    suspend fun getHerosById(@Url url:String): Response<HeroResponse>
 }
